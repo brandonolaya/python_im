@@ -8,7 +8,7 @@ print(f'print filter of my list {odd}')
 #####map
 #comprehensions
 #odd2 = [i**2 for i in my_list]
-odd2 = [list(map(lambda potencia: potencia**2, my_list))]
+odd2 = list(map(lambda potencia: potencia**2, my_list))
 print(f'print another list{odd2}')
 
 #####reduce
@@ -16,7 +16,7 @@ print(f'print another list{odd2}')
 #cont = 1
 #for i in my_list:
 #    cont += i
-odd3 = [reduce(lambda x, y: x+y, my_list)]
+odd3 = reduce(lambda x, y: x+y, my_list)
 #example
 # [2*2*2*2*2]
 #[4*2*2*2]
